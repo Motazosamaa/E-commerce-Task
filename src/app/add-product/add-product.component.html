@@ -1,0 +1,57 @@
+<!-- src/app/add-product/add-product.component.html -->
+
+<div class="container mx-auto px-6 py-3">
+  <div class="flex items-center justify-between">
+      <div class="hidden w-full text-gray-600 md:flex md:items-center">
+
+      </div>
+      <h1 class="w-full text-gray-700 md:text-center text-4xl mt-5 font-semibold">
+              Add product        </h1>
+      <div class="flex items-center justify-end w-full">
+
+
+          <div class="flex sm:hidden">
+
+          </div>
+      </div>
+  </div>
+  <div class="mb-3">
+    <label for="productName" class="form-label">Product Name</label>
+    <input type="text" class="form-control" id="productName" [(ngModel)]="newProduct.name">
+  </div>
+  <div class="mb-3">
+    <label for="productDescription" class="form-label">Product price</label>
+    <input type="number" class="form-control" id="productDescription" [(ngModel)]="newProduct.description">
+  </div>
+  <div class="mb-3">
+    <label for="productPrice" class="form-label">Product Price After Discount</label>
+    <input type="number" class="form-control" id="productPrice" [(ngModel)]="newProduct.price">
+    
+  </div>
+  <div class="mb-3">
+    <label for="productImage" class="form-label">Product Image</label>
+    <input type="file" class="form-control" id="productImage" (change)="onFileSelected($event)">
+  </div>
+  <button (click)="addProduct()" class="btn btn-primary">Add Product</button>
+</div>
+
+
+  
+
+
+
+
+
+
+        
+
+   
+
+
+
+      
+  
+         
+    
+
+
